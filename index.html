@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="pt" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casamento Sara & Helton | Moçambique</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Cinzel, Cormorant Garamond, Montserrat e Great Vibes (fallback caligráfico) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        cinzel: ['"Cinzel"', 'serif'],
+                        cormorant: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Montserrat"', 'sans-serif'],
+                        montserrat: ['"Montserrat"', 'sans-serif'],
+                        autography: ['"Autography"', '"Great Vibes"', 'cursive'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Scrollbar neutra e elegante */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f5f5f4;
+        }
+        .dark ::-webkit-scrollbar-track {
+            background: #0c0a09;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #a8a29e;
+            border-radius: 4px;
+        }
+        .dark ::-webkit-scrollbar-thumb {
+            background: #44403c;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-900 dark:bg-stone-950 dark:text-stone-100 transition-colors duration-500 font-sans antialiased selection:bg-stone-800 selection:text-white dark:selection:bg-stone-200 dark:selection:text-stone-900">
+
+    <!-- Barra de Navegação Flutuante -->
+    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-md bg-stone-50/90 dark:bg-stone-950/90 border-b border-stone-200 dark:border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <!-- Monograma -->
+            <a href="#inicio" class="font-cinzel text-xl sm:text-2xl font-bold tracking-widest text-stone-900 dark:text-stone-100">
+                S &amp; H
+            </a>
+
+            <!-- Links de Navegação (Desktop) -->
+            <nav class="hidden md:flex items-center space-x-8 text-xs uppercase tracking-[0.2em] font-medium text-stone-600 dark:text-stone-400">
+                <a href="#inicio" class="hover:text-stone-950 dark:hover:text-white transition-colors">Início</a>
+                <a href="#versiculo-1" class="hover:text-stone-950 dark:hover:text-white transition-colors">Nosso Amor</a>
+                <a href="#familia" class="hover:text-stone-950 dark:hover:text-white transition-colors">Família</a>
+                <a href="#galeria" class="hover:text-stone-950 dark:hover:text-white transition-colors">Galeria</a>
+                <a href="#versiculo-final" class="hover:text-stone-950 dark:hover:text-white transition-colors">Gratidão</a>
+            </nav>
+
+            <!-- Botão Modo Diurno / Noturno -->
+            <div class="flex items-center gap-3">
+                <button id="theme-toggle" aria-label="Alternar modo diurno e noturno" class="flex items-center gap-2 px-3.5 py-2 rounded-full border border-stone-300 dark:border-stone-700 bg-white dark:bg-stone-900 text-stone-800 dark:text-stone-200 shadow-sm hover:shadow-md hover:border-stone-400 dark:hover:border-stone-500 transition-all duration-300 text-xs font-medium tracking-wider">
+                    <i id="theme-icon-sun" data-lucide="sun" class="w-4 h-4 text-stone-200 hidden dark:block"></i>
+                    <i id="theme-icon-moon" data-lucide="moon" class="w-4 h-4 text-stone-700 block dark:hidden"></i>
+                    <span id="theme-label" class="hidden sm:inline">Modo Noturno</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- SEÇÃO HERO / CAPA PRINCIPAL (Sem detalhes dourados e exibindo a foto inteira) -->
+    <section id="inicio" class="relative pt-20 pb-12 lg:py-0 min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-stone-100 via-stone-50 to-stone-200/70 dark:from-stone-950 dark:via-stone-900 dark:to-stone-950">
+        
+        <!-- Ornamentos Botânicos Sutis em Monocromático -->
+        <svg class="absolute top-14 left-0 w-48 sm:w-72 h-48 sm:h-72 text-stone-300/60 dark:text-stone-700/40 pointer-events-none z-10" viewBox="0 0 200 200" fill="none">
+            <path d="M-10,180 C30,120 70,70 150,10" stroke="currentColor" stroke-width="1.2"/>
+            <path d="M35,125 C20,105 25,85 45,80 C55,95 50,115 35,125 Z" stroke="currentColor" stroke-width="1"/>
+            <path d="M65,92 C50,72 55,52 75,47 C85,62 80,82 65,92 Z" stroke="currentColor" stroke-width="1"/>
+            <path d="M100,60 C85,40 90,20 110,15 C120,30 115,50 100,60 Z" stroke="currentColor" stroke-width="1"/>
+            <path d="M45,130 C65,135 80,125 85,110 C68,108 53,115 45,130 Z" stroke="currentColor" stroke-width="1"/>
+            <path d="M80,95 C100,100 115,90 120,75 C103,73 88,80 80,95 Z" stroke="currentColor" stroke-width="1"/>
+            <circle cx="155" cy="12" r="2.5" fill="currentColor"/>
+        </svg>
+
+        <svg class="absolute bottom-0 left-0 w-56 sm:w-80 h-56 sm:h-80 text-stone-300/60 dark:text-stone-700/40 pointer-events-none z-10" viewBox="0 0 200 200" fill="none">
+            <path d="M-10,20 C40,80 90,130 170,195" stroke="currentColor" stroke-width="1.2"/>
+            <path d="M30,65 C50,55 70,65 72,82 C55,88 38,80 30,65 Z" stroke="currentColor" stroke-width="1"/>
+            <path d="M65,102 C85,92 105,102 107,119 C90,125 73,117 65,102 Z" stroke="currentColor" stroke-width="1"/>
+            <path d="M105,140 C125,130 145,140 147,157 C130,163 113,155 105,140 Z" stroke="currentColor" stroke-width="1"/>
+            <path d="M25,75 C18,95 28,112 42,115 C45,98 38,83 25,75 Z" stroke="currentColor" stroke-width="1"/>
+        </svg>
+
+        <!-- Container Principal da Capa -->
+        <div class="relative z-20 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 items-center gap-8 lg:gap-8 min-h-[calc(100vh-5rem)]">
+                
+                <!-- Coluna Esquerda: Tipografia Clássica em Ardósia / Marfim -->
+                <div class="lg:col-span-5 flex flex-col items-center justify-center text-center py-6 lg:py-12 px-2">
+                    
+                    <!-- Subtítulo CASAMENTO -->
+                    <p class="font-cinzel text-sm sm:text-base md:text-lg tracking-[0.35em] font-semibold text-stone-600 dark:text-stone-400 uppercase mb-2">
+                        CASAMENTO
+                    </p>
+
+                    <!-- Ornamento Filigrana Superior -->
+                    <div class="flex items-center justify-center gap-3 w-56 sm:w-64 mb-4 text-stone-400 dark:text-stone-600">
+                        <span class="h-[1px] flex-1 bg-gradient-to-r from-transparent to-stone-400 dark:to-stone-600"></span>
+                        <svg class="w-6 h-4" viewBox="0 0 40 20" fill="none">
+                            <path d="M20 3C16 3 14 7 10 7C6 7 4 4 4 4M20 3C24 3 26 7 30 7C34 7 36 4 36 4M20 17C16 17 14 13 10 13C6 13 4 16 4 16M20 17C24 17 26 13 30 13C34 13 36 16 36 16" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+                            <circle cx="20" cy="10" r="2" fill="currentColor"/>
+                        </svg>
+                        <span class="h-[1px] flex-1 bg-gradient-to-l from-transparent to-stone-400 dark:to-stone-600"></span>
+                    </div>
+
+                    <!-- Nome 1: SARA -->
+                    <h1 class="font-autography text-6xl sm:text-7xl md:text-8xl font-normal text-stone-900 dark:text-stone-50 leading-none py-1">
+                        Sara
+                    </h1>
+
+                    <!-- Separador com & no lugar do + -->
+                    <div class="flex items-center justify-center gap-4 w-56 sm:w-64 my-2 sm:my-3">
+                        <span class="h-[1px] flex-1 bg-gradient-to-r from-transparent via-stone-400 to-stone-500 dark:via-stone-600 dark:to-stone-500"></span>
+                        <span class="font-autography text-4xl sm:text-5xl text-stone-700 dark:text-stone-300 px-1">&amp;</span>
+                        <span class="h-[1px] flex-1 bg-gradient-to-l from-transparent via-stone-400 to-stone-500 dark:via-stone-600 dark:to-stone-500"></span>
+                    </div>
+
+                    <!-- Nome 2: HELTON -->
+                    <h1 class="font-autography text-6xl sm:text-7xl md:text-8xl font-normal text-stone-900 dark:text-stone-50 leading-none py-1">
+                        Helton
+                    </h1>
+
+                    <!-- Separador EM -->
+                    <div class="flex items-center justify-center gap-3 w-48 sm:w-56 mt-5 mb-2">
+                        <span class="h-[1px] flex-1 bg-gradient-to-r from-transparent to-stone-400 dark:to-stone-600"></span>
+                        <span class="font-cinzel text-xs sm:text-sm tracking-[0.3em] font-semibold text-stone-500 dark:text-stone-400">EM</span>
+                        <span class="h-[1px] flex-1 bg-gradient-to-l from-transparent to-stone-400 dark:to-stone-600"></span>
+                    </div>
+
+                    <!-- Local: MOÇAMBIQUE -->
+                    <p class="font-cinzel text-lg sm:text-xl md:text-2xl tracking-[0.25em] font-semibold text-stone-800 dark:text-stone-200 uppercase">
+                        MOÇAMBIQUE
+                    </p>
+
+                    <!-- Ornamento Filigrana Inferior -->
+                    <div class="flex items-center justify-center gap-2 w-40 mt-3 text-stone-400 dark:text-stone-600">
+                        <svg class="w-12 h-4" viewBox="0 0 60 20" fill="none">
+                            <path d="M5 10C15 2 25 18 30 10C35 2 45 18 55 10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+                            <circle cx="30" cy="10" r="2" fill="currentColor"/>
+                        </svg>
+                    </div>
+
+                    <!-- Botão Explorar Memórias -->
+                    <a href="#galeria" class="mt-8 inline-flex items-center gap-2.5 px-7 py-3 rounded-full bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-950 font-medium text-xs uppercase tracking-[0.2em] shadow-md hover:bg-stone-800 dark:hover:bg-white hover:-translate-y-0.5 transition-all duration-300">
+                        <span>Ver Álbum de Fotos</span>
+                        <i data-lucide="arrow-down" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Coluna Direita: Foto Primária Mostrada por Completo (Sem Cortar) -->
+                <div class="lg:col-span-7 relative flex items-center justify-center">
+                    <div class="relative w-full rounded-3xl overflow-hidden border border-stone-300 dark:border-stone-700 bg-stone-200/60 dark:bg-stone-900/80 shadow-xl flex items-center justify-center">
+                        <!-- Foto Primária em resolução completa (w-full h-auto object-contain) -->
+                        <img 
+                            src="https://lh3.googleusercontent.com/d/16rBwavBeweWUGxvAi9EavoPafmMS5r4G=w1600" 
+                            data-drive-id="16rBwavBeweWUGxvAi9EavoPafmMS5r4G"
+                            alt="Sara & Helton - Casamento em Moçambique" 
+                            class="w-full h-auto max-h-[82vh] object-contain mx-auto transition-transform duration-700 hover:scale-[1.02] cursor-pointer"
+                            onclick="openLightbox('16rBwavBeweWUGxvAi9EavoPafmMS5r4G', 'Sara & Helton — Momento Principal')"
+                            onerror="handleDriveImageError(this)"
+                        >
+
+                        <!-- Botão Discreto para Ampliar Capa -->
+                        <button onclick="openLightbox('16rBwavBeweWUGxvAi9EavoPafmMS5r4G', 'Sara & Helton — Momento Principal')" class="absolute bottom-4 right-4 z-20 bg-stone-900/75 hover:bg-stone-900 text-white backdrop-blur-md px-3.5 py-2 rounded-full text-xs flex items-center gap-1.5 border border-white/20 transition-all">
+                            <i data-lucide="maximize-2" class="w-3.5 h-3.5"></i>
+                            <span>Ampliar Foto</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 1: PRIMEIRO VERSÍCULO BÍBLICO EM DESTAQUE -->
+    <section id="versiculo-1" class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        <div class="max-w-5xl mx-auto">
+            <div class="bg-white dark:bg-stone-900/80 rounded-3xl p-6 sm:p-12 border border-stone-200 dark:border-stone-800 shadow-lg">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center">
+                    
+                    <!-- Texto do Versículo -->
+                    <div class="md:col-span-6 text-center md:text-left space-y-5">
+                        <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300 mb-1">
+                            <i data-lucide="heart" class="w-6 h-6"></i>
+                        </div>
+                        <blockquote class="font-cormorant italic text-3xl sm:text-4xl lg:text-[42px] leading-snug text-stone-900 dark:text-stone-100 font-medium">
+                            “Nós amamos porque Ele nos amou primeiro.”
+                        </blockquote>
+                        <div class="flex items-center justify-center md:justify-start gap-3">
+                            <span class="h-[1px] w-10 bg-stone-400 dark:bg-stone-600"></span>
+                            <cite class="not-italic font-montserrat text-xs sm:text-sm tracking-[0.25em] text-stone-600 dark:text-stone-400 font-semibold uppercase">
+                                1 João 4:19
+                            </cite>
+                        </div>
+                        <p class="text-sm sm:text-base text-stone-600 dark:text-stone-400 leading-relaxed pt-2">
+                            O amor que nos une hoje é o reflexo da graça divina que guiou os nossos passos até este dia.
+                        </p>
+                    </div>
+
+                    <!-- Foto Separada do Primeiro Versículo (Mostrada por Completo) -->
+                    <div class="md:col-span-6">
+                        <div class="group relative rounded-2xl overflow-hidden bg-stone-100 dark:bg-stone-950 border border-stone-200 dark:border-stone-800 shadow-md cursor-pointer" onclick="openLightbox('1QvdQq-70IU4jXRDMxeJPXvh8fVSOcvgW', 'Nós amamos porque Ele nos amou primeiro')">
+                            <img 
+                                src="https://lh3.googleusercontent.com/d/1QvdQq-70IU4jXRDMxeJPXvh8fVSOcvgW=w1200" 
+                                data-drive-id="1QvdQq-70IU4jXRDMxeJPXvh8fVSOcvgW"
+                                alt="Nós amamos porque Ele nos amou primeiro - Sara & Helton" 
+                                class="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.02]"
+                                onerror="handleDriveImageError(this)"
+                            >
+                            <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-end p-4">
+                                <span class="bg-stone-900/80 text-white p-2 rounded-full backdrop-blur-sm">
+                                    <i data-lucide="zoom-in" class="w-4 h-4"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 2: FOTO FAMILIAR -->
+    <section id="familia" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-stone-100/80 dark:bg-stone-900/40 border-y border-stone-200 dark:border-stone-800">
+        <div class="max-w-5xl mx-auto text-center">
+            <span class="font-montserrat text-xs tracking-[0.3em] uppercase text-stone-500 dark:text-stone-400 font-semibold">
+                Base &amp; Bênção
+            </span>
+            <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-stone-900 dark:text-stone-100 mt-2 mb-3">
+                Nossa Família
+            </h2>
+            <p class="max-w-xl mx-auto text-sm sm:text-base text-stone-600 dark:text-stone-400 mb-10">
+                Aqueles que caminharam ao nosso lado, celebraram cada conquista e abençoaram a nossa união.
+            </p>
+
+            <!-- Moldura da Foto Familiar (Mostrada por Completo) -->
+            <div class="group relative max-w-4xl mx-auto rounded-3xl overflow-hidden bg-stone-200/50 dark:bg-stone-950 border border-stone-300 dark:border-stone-700 shadow-xl cursor-pointer" onclick="openLightbox('1jcGkwE4r3-AN72tisMHfoK0fwbYu3sBi', 'Foto Familiar — Casamento Sara & Helton')">
+                <img 
+                    src="https://lh3.googleusercontent.com/d/1jcGkwE4r3-AN72tisMHfoK0fwbYu3sBi=w1400" 
+                    data-drive-id="1jcGkwE4r3-AN72tisMHfoK0fwbYu3sBi"
+                    alt="Foto Familiar - Sara & Helton" 
+                    class="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.02]"
+                    onerror="handleDriveImageError(this)"
+                >
+                <div class="absolute inset-0 bg-gradient-to-t from-stone-950/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-between p-6">
+                    <span class="font-cormorant italic text-xl text-white">Família Sara &amp; Helton</span>
+                    <span class="bg-stone-900/90 text-white px-3.5 py-1.5 rounded-full text-xs font-medium flex items-center gap-1.5 border border-white/20">
+                        <i data-lucide="maximize-2" class="w-3.5 h-3.5"></i> Ver em tela cheia
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 3: GALERIA DE MOMENTOS (SÁBADO E DOMINGO) -->
+    <section id="galeria" class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            
+            <!-- Cabeçalho da Galeria -->
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="font-cinzel text-xs tracking-[0.3em] uppercase text-stone-500 dark:text-stone-400 font-semibold">
+                    Memórias Eternizadas
+                </span>
+                <h2 class="font-cinzel text-3xl sm:text-5xl font-bold text-stone-900 dark:text-stone-100 mt-2 mb-4">
+                    Momentos do Casamento
+                </h2>
+                <p class="text-sm sm:text-base text-stone-600 dark:text-stone-400">
+                    Navegue pelos registros especiais divididos entre as celebrações de Sábado e Domingo. Todas as fotografias são exibidas na íntegra.
+                </p>
+            </div>
+
+            <!-- Seletor Principal de Dias (Sábado vs Domingo) -->
+            <div class="flex justify-center mb-8">
+                <div class="inline-flex p-1.5 rounded-full bg-stone-200/80 dark:bg-stone-900 border border-stone-300 dark:border-stone-800 shadow-inner">
+                    <button id="tab-sabado" onclick="switchDay('sabado')" class="px-6 sm:px-10 py-3 rounded-full font-cinzel text-xs sm:text-sm font-bold tracking-[0.18em] uppercase transition-all duration-300 bg-stone-900 text-white dark:bg-stone-100 dark:text-stone-950 shadow-md">
+                        Fotos do Sábado
+                    </button>
+                    <button id="tab-domingo" onclick="switchDay('domingo')" class="px-6 sm:px-10 py-3 rounded-full font-cinzel text-xs sm:text-sm font-bold tracking-[0.18em] uppercase transition-all duration-300 text-stone-600 dark:text-stone-400 hover:text-stone-950 dark:hover:text-white">
+                        Fotos do Domingo
+                    </button>
+                </div>
+            </div>
+
+            <!-- Sub-filtros de Categoria (Visível apenas quando Sábado está ativo) -->
+            <div id="sabado-filters" class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-12">
+                <button onclick="filterCategory('todos')" data-cat="todos" class="cat-btn active-cat px-4 py-2 rounded-full text-xs font-medium tracking-wider uppercase border transition-all duration-300 bg-stone-900 text-white border-stone-900 dark:bg-stone-100 dark:text-stone-950 dark:border-stone-100 shadow-sm">
+                    Todos (29)
+                </button>
+                <button onclick="filterCategory('making-of')" data-cat="making-of" class="cat-btn px-4 py-2 rounded-full text-xs font-medium tracking-wider uppercase border border-stone-300 dark:border-stone-700 bg-white dark:bg-stone-900 text-stone-700 dark:text-stone-300 hover:border-stone-500 transition-all duration-300">
+                    Making Of
+                </button>
+                <button onclick="filterCategory('registo-civil')" data-cat="registo-civil" class="cat-btn px-4 py-2 rounded-full text-xs font-medium tracking-wider uppercase border border-stone-300 dark:border-stone-700 bg-white dark:bg-stone-900 text-stone-700 dark:text-stone-300 hover:border-stone-500 transition-all duration-300">
+                    Registo Civil
+                </button>
+                <button onclick="filterCategory('noivos')" data-cat="noivos" class="cat-btn px-4 py-2 rounded-full text-xs font-medium tracking-wider uppercase border border-stone-300 dark:border-stone-700 bg-white dark:bg-stone-900 text-stone-700 dark:text-stone-300 hover:border-stone-500 transition-all duration-300">
+                    Fotos dos Noivos
+                </button>
+                <button onclick="filterCategory('igreja')" data-cat="igreja" class="cat-btn px-4 py-2 rounded-full text-xs font-medium tracking-wider uppercase border border-stone-300 dark:border-stone-700 bg-white dark:bg-stone-900 text-stone-700 dark:text-stone-300 hover:border-stone-500 transition-all duration-300">
+                    Igreja
+                </button>
+                <button onclick="filterCategory('salao')" data-cat="salao" class="cat-btn px-4 py-2 rounded-full text-xs font-medium tracking-wider uppercase border border-stone-300 dark:border-stone-700 bg-white dark:bg-stone-900 text-stone-700 dark:text-stone-300 hover:border-stone-500 transition-all duration-300">
+                    Salão
+                </button>
+                <button onclick="filterCategory('damos')" data-cat="damos" class="cat-btn px-4 py-2 rounded-full text-xs font-medium tracking-wider uppercase border border-stone-300 dark:border-stone-700 bg-white dark:bg-stone-900 text-stone-700 dark:text-stone-300 hover:border-stone-500 transition-all duration-300">
+                    Damos
+                </button>
+            </div>
+
+            <!-- Título de Contexto do Domingo (Visível apenas quando Domingo está ativo) -->
+            <div id="domingo-header" class="hidden text-center mb-10">
+                <span class="inline-block px-4 py-1.5 rounded-full bg-stone-200 dark:bg-stone-800 text-stone-700 dark:text-stone-300 font-cinzel text-xs tracking-widest uppercase">
+                    Celebração &amp; Confraternização de Domingo
+                </span>
+            </div>
+
+            <!-- Layout Masonry / Colunas Dinâmicas para Mostrar Todas as Fotos por Completo sem Cortes -->
+            <div id="gallery-grid" class="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+                <!-- Preenchido via JavaScript -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SEÇÃO 4: FOTO FINAL COM VERSÍCULO BEM ACIMA DA FOTO -->
+    <section id="versiculo-final" class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-transparent via-stone-100/80 to-stone-200/60 dark:from-transparent dark:via-stone-900/60 dark:to-stone-950 border-t border-stone-200 dark:border-stone-800">
+        <div class="max-w-4xl mx-auto text-center">
+            
+            <!-- Ornamento Superior -->
+            <div class="flex items-center justify-center gap-3 mb-5 text-stone-400 dark:text-stone-500">
+                <span class="h-[1px] w-12 bg-stone-300 dark:bg-stone-700"></span>
+                <i data-lucide="sparkles" class="w-5 h-5"></i>
+                <span class="h-[1px] w-12 bg-stone-300 dark:bg-stone-700"></span>
+            </div>
+
+            <!-- Versículo BEM ACIMA da foto final conforme solicitado -->
+            <blockquote class="font-cormorant italic text-3xl sm:text-4xl md:text-5xl text-stone-900 dark:text-stone-100 font-semibold leading-tight mb-3 px-2">
+                “Grandes coisas tem feito o Senhor por nós, por isso estamos alegres.”
+            </blockquote>
+            <cite class="block not-italic font-montserrat text-xs sm:text-sm tracking-[0.3em] text-stone-600 dark:text-stone-400 font-bold uppercase mb-10">
+                Salmos 126:3
+            </cite>
+
+            <!-- Foto Final (Mostrada por Completo) -->
+            <div class="group relative rounded-3xl overflow-hidden bg-stone-200/50 dark:bg-stone-900 border border-stone-300 dark:border-stone-700 shadow-2xl cursor-pointer" onclick="openLightbox('1xboa-cS6ljfClnBtS1mvXD1IIyU3_mzW', 'Grandes coisas tem feito o Senhor por nós, por isso estamos alegres.')">
+                <img 
+                    src="https://lh3.googleusercontent.com/d/1xboa-cS6ljfClnBtS1mvXD1IIyU3_mzW=w1400" 
+                    data-drive-id="1xboa-cS6ljfClnBtS1mvXD1IIyU3_mzW"
+                    alt="Grandes coisas tem feito o Senhor por nós - Sara & Helton" 
+                    class="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.02]"
+                    onerror="handleDriveImageError(this)"
+                >
+                <div class="absolute inset-0 bg-gradient-to-t from-stone-950/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center p-6">
+                    <span class="bg-stone-900/85 text-white border border-white/20 px-4 py-2 rounded-full text-xs uppercase tracking-widest backdrop-blur-md">
+                        Ampliar Fotografia
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- RODAPÉ / DIREITOS RESERVADOS -->
+    <footer class="py-12 px-4 sm:px-6 lg:px-8 bg-stone-100 dark:bg-stone-950 border-t border-stone-200 dark:border-stone-800 text-center">
+        <div class="max-w-4xl mx-auto space-y-4">
+            <p class="font-cinzel text-2xl sm:text-3xl font-bold text-stone-900 dark:text-stone-100 tracking-widest">
+                SARA &amp; HELTON
+            </p>
+            <p class="font-cormorant italic text-lg text-stone-600 dark:text-stone-400">
+                Moçambique • Para todo o sempre
+            </p>
+            <div class="w-24 h-[1px] bg-stone-300 dark:bg-stone-700 mx-auto my-4"></div>
+            <p class="text-xs sm:text-sm tracking-[0.15em] uppercase text-stone-600 dark:text-stone-400 font-medium">
+                &copy; Todos os direitos reservados a <span class="text-stone-900 dark:text-white font-bold">“Dream Production”</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- MODAL LIGHTBOX PARA VISUALIZAÇÃO AMPLIADA -->
+    <div id="lightbox-modal" class="fixed inset-0 z-[100] hidden bg-stone-950/95 backdrop-blur-lg flex items-center justify-center p-4 sm:p-8" onclick="closeLightboxOnBackdrop(event)">
+        <!-- Botão Fechar -->
+        <button onclick="closeLightbox()" aria-label="Fechar visualização" class="absolute top-5 right-5 z-20 p-3 rounded-full bg-stone-900/90 text-white border border-white/20 hover:bg-white hover:text-stone-950 transition-all">
+            <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+
+        <!-- Botão Anterior -->
+        <button id="lightbox-prev" onclick="navigateLightbox(-1)" aria-label="Foto anterior" class="hidden sm:flex absolute left-5 z-20 p-3 rounded-full bg-stone-900/90 text-white border border-white/20 hover:bg-white hover:text-stone-950 transition-all">
+            <i data-lucide="chevron-left" class="w-6 h-6"></i>
+        </button>
+
+        <!-- Conteúdo da Imagem / Fallback Iframe -->
+        <div class="relative max-w-6xl w-full flex flex-col items-center justify-center">
+            <div id="lightbox-media-container" class="w-full max-h-[82vh] flex items-center justify-center rounded-2xl overflow-hidden border border-white/15 shadow-2xl bg-stone-900">
+                <img id="lightbox-img" src="" alt="Visualização ampliada" class="max-h-[82vh] w-auto object-contain">
+            </div>
+            <p id="lightbox-caption" class="mt-4 font-cormorant italic text-xl sm:text-2xl text-stone-200 text-center px-4"></p>
+        </div>
+
+        <!-- Botão Próximo -->
+        <button id="lightbox-next" onclick="navigateLightbox(1)" aria-label="Próxima foto" class="hidden sm:flex absolute right-5 z-20 p-3 rounded-full bg-stone-900/90 text-white border border-white/20 hover:bg-white hover:text-stone-950 transition-all">
+            <i data-lucide="chevron-right" class="w-6 h-6"></i>
+        </button>
+    </div>
+
+    <!-- SCRIPTS DE INTERATIVIDADE E DADOS DA GALERIA -->
+    <script>
+        // Inicializar Ícones Lucide
+        lucide.createIcons();
+
+        // Banco de Dados Completo das Fotos do Sábado e Domingo
+        const weddingPhotos = [
+            // SÁBADO - Making of
+            { id: '1FkJGoK83aceVqL3GZPa3c31j-K28YKat', day: 'sabado', category: 'making-of', categoryLabel: 'Making Of', title: 'Making Of — Preparativos' },
+
+            // SÁBADO - Registo Civil
+            { id: '1r5-KxaX87V-27SSQwVV6watDnK6HyETY', day: 'sabado', category: 'registo-civil', categoryLabel: 'Registo Civil', title: 'Registo Civil — O Sim Oficial' },
+            { id: '1YXproFSTs2UPdKC44s6oGngmyWuHtxBX', day: 'sabado', category: 'registo-civil', categoryLabel: 'Registo Civil', title: 'Registo Civil — Assinatura' },
+            { id: '1dQtrkauVw5tLRjgEtK67FbSC219iZtZ4', day: 'sabado', category: 'registo-civil', categoryLabel: 'Registo Civil', title: 'Registo Civil — Celebração' },
+            { id: '1jcGkwE4r3-AN72tisMHfoK0fwbYu3sBi', day: 'sabado', category: 'registo-civil', categoryLabel: 'Registo Civil', title: 'Registo Civil — Com a Família' },
+
+            // SÁBADO - Fotos dos Noivos
+            { id: '1QvdQq-70IU4jXRDMxeJPXvh8fVSOcvgW', day: 'sabado', category: 'noivos', categoryLabel: 'Fotos dos Noivos', title: 'Sara & Helton — Ensaio dos Noivos' },
+            { id: '1YwJ4NapS5bBFVj7PA4G8lKpeZ6xf8m2e', day: 'sabado', category: 'noivos', categoryLabel: 'Fotos dos Noivos', title: 'Sara & Helton — Cumplicidade' },
+            { id: '17DyLH4mHkUl6yvB5SVkgms1Dwsc1Ai87', day: 'sabado', category: 'noivos', categoryLabel: 'Fotos dos Noivos', title: 'Sara & Helton — Olhares' },
+            { id: '1xboa-cS6ljfClnBtS1mvXD1IIyU3_mzW', day: 'sabado', category: 'noivos', categoryLabel: 'Fotos dos Noivos', title: 'Sara & Helton — Alegria' },
+            { id: '1O3xTcVcbifohEhXlwZ8ENfOlJTmMr1kS', day: 'sabado', category: 'noivos', categoryLabel: 'Fotos dos Noivos', title: 'Sara & Helton — Eternidade' },
+            { id: '1s_o8K7vr3Qo49LslGANWhAPDBIFwyuLv', day: 'sabado', category: 'noivos', categoryLabel: 'Fotos dos Noivos', title: 'Sara & Helton — Retrato' },
+
+            // SÁBADO - Igreja
+            { id: '16rBwavBeweWUGxvAi9EavoPafmMS5r4G', day: 'sabado', category: 'igreja', categoryLabel: 'Igreja', title: 'Igreja — Altar Sagrado' },
+            { id: '1QUl-_pIk07akyeSgZ_7bzZ6DDBvcjzBj', day: 'sabado', category: 'igreja', categoryLabel: 'Igreja', title: 'Igreja — Cerimónia Religiosa' },
+            { id: '1k8A7FNKLRyALaDwmi30CAsXa7UJWI0cn', day: 'sabado', category: 'igreja', categoryLabel: 'Igreja', title: 'Igreja — Votos de Amor' },
+            { id: '1uRX_ogpyRFNmg4VpsXpXFDKs_IRm8jEi', day: 'sabado', category: 'igreja', categoryLabel: 'Igreja', title: 'Igreja — Bênção Nupcial' },
+            { id: '1mGzNYTjtjH6NamxhheLLTc6nWKqWvfno', day: 'sabado', category: 'igreja', categoryLabel: 'Igreja', title: 'Igreja — Momento de Fé' },
+            { id: '1XT9_f9O8VmfGoQCIX5l-zDYFagTfFh5U', day: 'sabado', category: 'igreja', categoryLabel: 'Igreja', title: 'Igreja — Alianças' },
+            { id: '1K2u6Kzkfa0L0jFhxFLk8d2t2V9LtZdfy', day: 'sabado', category: 'igreja', categoryLabel: 'Igreja', title: 'Igreja — Emoção' },
+            { id: '1kwaF0QYJpLZV091i-6avj3RTYBSKJXTY', day: 'sabado', category: 'igreja', categoryLabel: 'Igreja', title: 'Igreja — Saída dos Noivos' },
+            { id: '1UJRtRuQ8-RyYp6nTMvei7hnHj4fu3bdc', day: 'sabado', category: 'igreja', categoryLabel: 'Igreja', title: 'Igreja — Celebração' },
+
+            // SÁBADO - Salão
+            { id: '1ekF1B5d3e-hjcvQnpDvEFALtoJdLOzNQ', day: 'sabado', category: 'salao', categoryLabel: 'Salão', title: 'Salão — Recepção Festiva' },
+            { id: '1lpABONS0ifTUdLNup7JVBgZ7yK1xQold', day: 'sabado', category: 'salao', categoryLabel: 'Salão', title: 'Salão — Brinde dos Noivos' },
+            { id: '1gFpG-Gf9Gury8SwNGqPeJshKrQAMFSS5', day: 'sabado', category: 'salao', categoryLabel: 'Salão', title: 'Salão — Primeira Dança' },
+            { id: '1ZQsVXVTJ5g6pND1ZAXXiHBiDrUUSv7zZ', day: 'sabado', category: 'salao', categoryLabel: 'Salão', title: 'Salão — Festa em Moçambique' },
+
+            // SÁBADO - Damos
+            { id: '1741IkVJz2OTAPWtLDBh8tTlX3pIomxok', day: 'sabado', category: 'damos', categoryLabel: 'Damos', title: 'Damos — Cortejo de Honra' },
+            { id: '1RnJm_MDHIRcLhPeuSJ6GcDNEbqDNWhJ6', day: 'sabado', category: 'damos', categoryLabel: 'Damos', title: 'Damos — Elegância' },
+            { id: '1KiY-x0-lV3pv1YLNarUkOslLDTteufdj', day: 'sabado', category: 'damos', categoryLabel: 'Damos', title: 'Damos — Sorrisos' },
+            { id: '1XydhRw0j5shdzIDlMRQxvJlVZeoe-IOy', day: 'sabado', category: 'damos', categoryLabel: 'Damos', title: 'Damos — Momento Especial' },
+
+            // DOMINGO
+            { id: '1QJItxK7gFh-uoSuGXFVBdukk8TeC0IT5', day: 'domingo', category: 'domingo', categoryLabel: 'Domingo', title: 'Domingo — Confraternização' },
+            { id: '1-g5HYrQsXfANomPsa0s09QE-Uv0fkLRE', day: 'domingo', category: 'domingo', categoryLabel: 'Domingo', title: 'Domingo — Alegria Compartilhada' },
+            { id: '1jES88fkMuQ-sML-RetvFNIW6L4y0oD8V', day: 'domingo', category: 'domingo', categoryLabel: 'Domingo', title: 'Domingo — Celebração Contínua' },
+            { id: '1oCyefO-L0sOT3e-raHrms_4Iflp-1EfA', day: 'domingo', category: 'domingo', categoryLabel: 'Domingo', title: 'Domingo — Encerramento Festivo' }
+        ];
+
+        let currentDay = 'sabado';
+        let currentCategory = 'todos';
+        let filteredPhotosList = [];
+        let currentLightboxIndex = -1;
+
+        // Função de Fallback inteligente caso a imagem direta do Drive falhe
+        function handleDriveImageError(imgElement) {
+            const driveId = imgElement.getAttribute('data-drive-id');
+            const attempt = parseInt(imgElement.getAttribute('data-retry') || '0', 10);
+
+            if (attempt === 0 && driveId) {
+                imgElement.setAttribute('data-retry', '1');
+                imgElement.src = `https://drive.google.com/thumbnail?id=${driveId}&sz=w1400`;
+            } else if (attempt === 1 && driveId) {
+                const parent = imgElement.parentElement;
+                const iframe = document.createElement('iframe');
+                iframe.src = `https://drive.google.com/file/d/${driveId}/preview`;
+                iframe.className = 'w-full aspect-[4/3] border-0';
+                iframe.setAttribute('allow', 'autoplay');
+                parent.innerHTML = '';
+                parent.appendChild(iframe);
+            }
+        }
+
+        // Renderizar a Galeria mostrando todas as fotos por completo (proporção original preservada)
+        function renderGallery() {
+            const grid = document.getElementById('gallery-grid');
+            grid.innerHTML = '';
+
+            if (currentDay === 'sabado') {
+                filteredPhotosList = weddingPhotos.filter(p => 
+                    p.day === 'sabado' && (currentCategory === 'todos' || p.category === currentCategory)
+                );
+            } else {
+                filteredPhotosList = weddingPhotos.filter(p => p.day === 'domingo');
+            }
+
+            filteredPhotosList.forEach((photo, index) => {
+                const card = document.createElement('div');
+                card.className = 'break-inside-avoid group relative rounded-2xl overflow-hidden bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer';
+                card.onclick = () => openLightboxByIndex(index);
+
+                card.innerHTML = `
+                    <div class="relative w-full overflow-hidden">
+                        <img 
+                            src="https://lh3.googleusercontent.com/d/${photo.id}=w1200" 
+                            data-drive-id="${photo.id}"
+                            alt="${photo.title}" 
+                            loading="lazy"
+                            class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.03]"
+                            onerror="handleDriveImageError(this)"
+                        >
+                        <div class="absolute inset-0 bg-gradient-to-t from-stone-950/75 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-4">
+                            <div class="flex justify-between items-start">
+                                <span class="px-3 py-1 rounded-full text-[10px] font-montserrat font-semibold uppercase tracking-widest bg-stone-900/85 text-white backdrop-blur-sm border border-white/15">
+                                    ${photo.categoryLabel}
+                                </span>
+                                <span class="p-2 rounded-full bg-stone-900/80 text-white backdrop-blur-sm border border-white/15">
+                                    <i data-lucide="maximize-2" class="w-3.5 h-3.5"></i>
+                                </span>
+                            </div>
+                            <p class="font-cormorant italic text-lg text-white leading-snug">
+                                ${photo.title}
+                            </p>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+
+            lucide.createIcons();
+        }
+
+        // Alternar entre Sábado e Domingo
+        function switchDay(day) {
+            currentDay = day;
+            const tabSabado = document.getElementById('tab-sabado');
+            const tabDomingo = document.getElementById('tab-domingo');
+            const sabadoFilters = document.getElementById('sabado-filters');
+            const domingoHeader = document.getElementById('domingo-header');
+
+            const activeClasses = ['bg-stone-900', 'text-white', 'dark:bg-stone-100', 'dark:text-stone-950', 'shadow-md'];
+            const inactiveClasses = ['text-stone-600', 'dark:text-stone-400', 'hover:text-stone-950', 'dark:hover:text-white'];
+
+            if (day === 'sabado') {
+                tabSabado.classList.add(...activeClasses);
+                tabSabado.classList.remove(...inactiveClasses);
+                tabDomingo.classList.remove(...activeClasses);
+                tabDomingo.classList.add(...inactiveClasses);
+
+                sabadoFilters.classList.remove('hidden');
+                domingoHeader.classList.add('hidden');
+            } else {
+                tabDomingo.classList.add(...activeClasses);
+                tabDomingo.classList.remove(...inactiveClasses);
+                tabSabado.classList.remove(...activeClasses);
+                tabSabado.classList.add(...inactiveClasses);
+
+                sabadoFilters.classList.add('hidden');
+                domingoHeader.classList.remove('hidden');
+            }
+
+            renderGallery();
+        }
+
+        // Filtrar Categorias do Sábado
+        function filterCategory(category) {
+            currentCategory = category;
+            const buttons = document.querySelectorAll('.cat-btn');
+            
+            buttons.forEach(btn => {
+                if (btn.getAttribute('data-cat') === category) {
+                    btn.className = 'cat-btn active-cat px-4 py-2 rounded-full text-xs font-medium tracking-wider uppercase border transition-all duration-300 bg-stone-900 text-white border-stone-900 dark:bg-stone-100 dark:text-stone-950 dark:border-stone-100 shadow-sm';
+                } else {
+                    btn.className = 'cat-btn px-4 py-2 rounded-full text-xs font-medium tracking-wider uppercase border border-stone-300 dark:border-stone-700 bg-white dark:bg-stone-900 text-stone-700 dark:text-stone-300 hover:border-stone-500 transition-all duration-300';
+                }
+            });
+
+            renderGallery();
+        }
+
+        // Lightbox (Visualização Ampliada em Resolução Completa)
+        function openLightbox(driveId, caption) {
+            currentLightboxIndex = -1;
+            document.getElementById('lightbox-prev').classList.add('hidden');
+            document.getElementById('lightbox-next').classList.add('hidden');
+            showLightboxMedia(driveId, caption);
+        }
+
+        function openLightboxByIndex(index) {
+            currentLightboxIndex = index;
+            const photo = filteredPhotosList[index];
+            document.getElementById('lightbox-prev').classList.remove('hidden');
+            document.getElementById('lightbox-next').classList.remove('hidden');
+            showLightboxMedia(photo.id, `${photo.categoryLabel} — ${photo.title}`);
+        }
+
+        function showLightboxMedia(driveId, caption) {
+            const modal = document.getElementById('lightbox-modal');
+            const container = document.getElementById('lightbox-media-container');
+            const captionEl = document.getElementById('lightbox-caption');
+
+            container.innerHTML = `
+                <img 
+                    id="lightbox-img" 
+                    src="https://lh3.googleusercontent.com/d/${driveId}=w2000" 
+                    data-drive-id="${driveId}"
+                    alt="${caption}" 
+                    class="max-h-[82vh] w-auto object-contain"
+                    onerror="handleDriveImageError(this)"
+                >
+            `;
+            captionEl.textContent = caption;
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function navigateLightbox(direction) {
+            if (currentLightboxIndex === -1 || filteredPhotosList.length === 0) return;
+            currentLightboxIndex = (currentLightboxIndex + direction + filteredPhotosList.length) % filteredPhotosList.length;
+            const photo = filteredPhotosList[currentLightboxIndex];
+            showLightboxMedia(photo.id, `${photo.categoryLabel} — ${photo.title}`);
+        }
+
+        function closeLightbox() {
+            const modal = document.getElementById('lightbox-modal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        function closeLightboxOnBackdrop(event) {
+            if (event.target.id === 'lightbox-modal') {
+                closeLightbox();
+            }
+        }
+
+        // Teclado no Lightbox (Esc e Setas)
+        document.addEventListener('keydown', (e) => {
+            const modal = document.getElementById('lightbox-modal');
+            if (modal.classList.contains('hidden')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowRight') navigateLightbox(1);
+            if (e.key === 'ArrowLeft') navigateLightbox(-1);
+        });
+
+        // Alternância Modo Diurno / Modo Noturno
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeLabel = document.getElementById('theme-label');
+        const htmlEl = document.documentElement;
+
+        function updateThemeUI() {
+            const isDark = htmlEl.classList.contains('dark');
+            themeLabel.textContent = isDark ? 'Modo Diurno' : 'Modo Noturno';
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            htmlEl.classList.toggle('dark');
+            localStorage.setItem('wedding-theme', htmlEl.classList.contains('dark') ? 'dark' : 'light');
+            updateThemeUI();
+        });
+
+        if (localStorage.getItem('wedding-theme') === 'dark') {
+            htmlEl.classList.add('dark');
+        }
+        updateThemeUI();
+
+        // Inicializar Galeria
+        renderGallery();
+    </script>
+</body>
+</html>
